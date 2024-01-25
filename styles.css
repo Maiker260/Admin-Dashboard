@@ -1,6 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-* {
-    font-family: 'Roboto', sans-serif;
+:root {
+    --main_Color:  #65a30d;
+    --btn_color: #4d7c0f;
 }
 
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+}
+
+
+/* left side/NavBar */
+
+.left_side {
+    border: 1px solid black;
+    width: 20em;
+    height: 100vh;
+    background-color: var(--main_Color);
+    color: white;
+    grid-area: 1 / 1 / 3 / 1;
+}
+
+.left_side_main_icon {
+    margin: 1.2em 1em 3em;
+    align-items: center;
+}
+
+.nav_list {
+    margin-left: 2em;
+    margin-bottom: 0.9em;
+    align-items: center;
+}
+
+.middle {
+    margin-top: 4em;
+}
+
+.left_side_icons {
+    margin-right: 1em;
+}
+
+
+/* right side */
+
+
+/* header top side */
+
+.header_top_side {
+    justify-content: space-between;
+    margin: 1em 6em 1em 4em;
+}
+
+.rigth_top_side {
+    width: 80vw; /* NEED TO CHANGE */
+    border: 1px solid black;
+}
+
+.search_bar {
+    align-items: center;
+    gap: 1em;
+}
+
+#main_search_bar {
+    width: 60em;
+    height: 2em;
+    border-radius: 1em;
+    border: none;
+    background-color: #e2e8f0;
+}
+
+.notification_area {
+    align-items: center;
+    gap: 2em;
+}
+
+.profile_photo {
+    border-radius: 3em;
+}
+
+/* header bottom side */
+
+.header_bottom_side {
+    justify-content: space-between;
+    margin: 0 4em;
+}
+
+.user_details {
+    margin-bottom: 1em;
+}
+
+.greeting {
+    flex-direction: column;
+    margin-left: 1.5em;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+.main_buttons {
+    align-items: center;
+    gap: 1.5em;
+}
+
+.header_btn {
+    padding: 1em 3em;
+    background-color: var(--btn_color);
+    color: white;
+    border-radius: 2em;
+    border: none;
+}
+
+
+/* Main Section */
+
+.main_container {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 2em;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
